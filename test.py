@@ -128,8 +128,8 @@ def reg():
         "accept-encoding": "gzip, deflate, br"
     }
     data = {
-        "email": "vn1@mozej.com",
-        "password": "123456",
+        "email": "wquzdbsf69@hotmail.com",
+        "password": "12345678",
         "returnSecureToken": True
     }
     with open('email.json',mode='a',encoding='utf-8') as f:
@@ -154,12 +154,9 @@ def cpm_2():
     a = requests.post(url, headers=headers, json=data)
     return a.text
 
-print(reg())
-em = input("Email")
-pas = input("Pass")
-login = (em, pas)
-a = login
+print(reg()) 
+a = login('vn1@mozej.com','123456')
 b = get_coin(a) 
 print(b)
 c = get_king(a)
-print(c)
+print(c) 
